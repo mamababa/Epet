@@ -1,0 +1,455 @@
+@import "./../lib/reset.scss";
+.box {
+    header {
+        @include rect(100%,0.47rem);
+        a {
+            display:block;
+            img {
+                @include rect(100%,auto)
+            }
+        }
+    }
+    .content {
+        background-color: #f3f4f5;
+    }
+    .indexbox {
+        @include rect(100%,auto);
+         padding:5px 10px 5px 10px;
+         background: #fff;
+         .searchbox {
+             padding:8px 0;
+             background:#fff;
+             text-align:center;
+             display:-webkit-box;
+             -webkit-box-align:center;
+             @include rect(100%,auto);
+             .location {
+                 margin-right:20px;
+                 position:relative;
+                 font-size:14px;
+                 float: left;
+                 span {
+                     color:#898989;
+                     font-size:13px;
+                 }
+                 .line {
+                  margin:0 3px 0 3px;   
+                 }
+                 i {
+                     position:absolute;
+                     top:10px;
+                     right:-11px;
+                     border-width:4px;
+                     font-size:0;
+                     line-height:0;
+                     border-style:solid solid solid;
+                     border-color:#898989 transparent transparent;
+                 }
+             }
+             .search-text {
+                position:relative;
+                -webkit-box-flex:1;
+                a {
+                    color:#333;
+                    input {
+                        @include rect(100%,0.25rem);
+                        @include background-color(#e9e9e9);
+                        border-radius:4px;
+                        color:#bcbcbc;
+                        text-indent:10px;
+                        font-size:13px;
+                        border:0;
+                    }
+                    span {
+                        @include rect(0.11rem,0.11rem);
+                        position:absolute;
+                        top:0;
+                        right:5px;
+                        bottom:0;
+                        margin:auto 0;
+                        background: url(./../images/search.png) no-repeat;
+                        background-size:11px auto;
+                    }
+                }
+             }
+             .info {
+                 display:block;
+                 img {
+                     width:25px;
+                     margin-left:10px;
+                     vertical-align:middle;
+                 }
+             }
+         }
+
+
+    }
+    //       导航部分
+         .find_nav {
+             @include rect(100%,0.35rem);
+             min-width:320px;
+             @include overflow(hidden);
+             @include overflow();
+             background: #fff;
+            .nav_scroll {
+             width:140%;
+             ul {
+                 @include rect(100%,auto);
+                 @include overflow();
+                 display:flex;
+                 white-space: nowrap;
+                 li {
+                     flex:1;
+                     width:0.635rem;
+                     font-family: "微软雅黑";
+                     a {
+                         @include rect(100%,100%);
+                         display:block;
+                         line-height:36px;
+                         font-size:14px;
+                         text-align:center;
+                         color:#666;
+                         span.main {
+                             color:#459d36;
+                             display:inline-block;
+                             position:relative;
+                             i {
+                                 position:absolute;
+                                 bottom:1px;
+                                 width:120%;
+                                 height:2px;
+                                 left:-10%;
+                                 background:#459d36;
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     //菜单部分
+     .columnnavdiv {
+         @include rect(100%,auto);
+         ul {
+              @include rect(100%,auto);
+              overflow:hidden;
+              li {
+                  @include rect(20%,auto);
+                 float:left;
+              }
+              li img {
+                  display:block;
+                  width:100%;
+              }
+         }
+        
+     }
+     .newCustom {
+         @include rect(100%,auto);
+         a {
+             display:block;
+             img {
+                 width:100%;
+                 height:102.4px;
+             }
+         }
+     }
+     //疯抢部分
+     .surprise_day {
+         @include rect(100%,auto);
+         background: #fff;
+         .surprise_tit {
+             position:relative;
+             padding:10px;
+             overflow:hidden;
+             .titimg {
+                 float: left;
+                 img {
+                     width:85px;
+                     display:block;
+                     margin-left:5px;
+                 }
+             }
+             .nextstart {
+                 position:absolute;
+                 right:107px;
+                 margin-right:5px;
+                 margin-left:10px;
+                 font-size:13px;
+             }
+             .timego {
+                 position:absolute;
+                 right:55px;
+                 .shi {
+                     border:1px solid #ddd;
+                     padding:1px 2px;
+                     font-size:13px;
+                 }
+                 .dian {
+                     margin: 0 3px;
+                     font-weight:700;
+                     font-size:12px;
+                 }
+                  .fen {
+                     border:1px solid #ddd;
+                     padding:1px 2px;
+                     font-size:13px;
+                 }
+             }
+             .more {
+                 position:absolute;
+                 top:0;
+                 right:-8px;
+                 a {
+                     text-align:right;
+                     display:block;
+                      img {
+                        width:50%;
+                     margin:0 0 0 auto;
+                    }
+                 }
+                
+             }
+         }
+         .surprise_con {
+            padding-left:5px;
+            margin-bottom:10px; 
+            overflow:auto;
+              .surprise_Img {
+                  width:140%;
+                  height:100%;
+                  overflow:auto;
+                  a {
+                      display:block;
+                      margin-right:10px;
+                      box-sizing: border-box;
+                      float: left;
+                      padding:0 0.5em;            
+                      img {
+                          display:block;
+                          width:100%;
+                          width:0.68rem;
+                      }
+                      .price{
+                          text-align:center;
+                          color:red;
+                          margin-top:5px;
+                          font-size:14px;
+                          width:100%;
+                      }
+                      .save{
+                          width:100%;
+                          text-align:center;
+                          color:#999;
+                         font-size:12px;                
+                      }
+                  }
+              }
+         }
+     }
+     //广告部分
+     .ad {
+         @inclcude rect(100%,auto);
+         display:flex;
+         a {
+             display:block;
+         }
+         .adLeft {
+             flex:1;
+             
+             a {
+                 img {
+                     width:100%;
+                 }
+             }
+         }
+          .adRight {
+             flex:1;
+            
+             a img{
+                 height:106px;
+             }
+         }
+     }
+     .pre {
+         width:100%;
+         margin:10px 0 10px 0;
+         a {
+             display:block;
+             img {
+                 width:100%;
+             }
+         }
+     }
+     .fashion {
+        margin:10px 0 5px 0;
+         position:relative;
+         background: #fff;
+         overflow:hidden;
+         .chao_fl {
+             display:block;
+             margin-left:10px;
+             width:160px;
+             float: left;
+         }
+         .chao_fr {
+             display:block;
+             position:absolute;
+           right:0;
+             img {
+                 display:block;
+                 width:60px;
+             }
+         }
+         .fashion_con {
+             width:100%;
+             .fashion_wrap {
+                 width:100%;
+                 position:relative;
+                 a img {
+                     display:block;
+                     width:100%;
+                 }
+                 a span {
+                     position:absolute;
+                     background: url(https://static.epetbar.com/static_web/wap/dist/images/background/play.png) no-repeat;
+                     @include rect(0.2rem,0.2rem);
+                     
+                     background-size:contain;
+                     left:50%;
+                     top:50%;
+                     margin-left:-10px;
+                     margin-top:-10px;
+                 }
+             }
+             .fashion_info {
+                 font-size:12px;
+                 padding:10px;
+                 color:#333;
+                 text-align:center;
+                font-family:"Microsoft Yahei";
+                .brand {
+                    overflow:hidden;
+                    white-space: nowrap;
+                    word-wrap:normal;
+                    text-overflow: ellipsis;
+                }
+                .firstSpan {
+                    display:inline-block;
+                    width:10px;
+                    height:9px;
+                    background:url(https://static.epetbar.com/static_web/wap/dist/images/background/view-black.png) 0 0 no-repeat;
+                    background-size:contain;
+                    margin-right:3px;
+                }
+                .secondSpan {
+                    margin:0 10px 0 10px;
+                }
+             }
+             .brand_info {
+                 color:#999;
+             }
+         }
+         .service {
+             @inclcude rect(100%,auto);
+             margin:10px 0 10px 0;
+             display:flex;
+             .service_fl {
+                 flex:1;
+                 a {
+                     display:block;
+                     img {
+                         width:100%;
+                     }
+                 }
+             }
+             .service_fr {
+                 flex:1;
+                 a {
+                     display:block;
+                     img {
+                         width:100%;
+                     }
+                 }
+             }
+         }
+     }
+     //品牌特卖
+     .sale {
+         @inclcude rect(100%,auto);
+         position:relative;
+         background: #fff;
+         overflow:hidden;
+         .sale_fl {
+             margin-left:10px;
+             width:160px;
+         }
+         .sale_fr {
+             position:absolute;
+             right:0;
+             img {
+                 width:60px;
+             }
+         }
+         .salead {
+             @inclcude rect(100%,auto);
+             margin-bottom:10px;
+             a {
+                 display:block;
+                 img {
+                     @inclcude rect(100%,auto);
+                     height:1.36rem;
+                 }
+             }
+         }
+     }
+     //萌爪
+     .cutefoot {
+         @include rect(100%,auto);
+         overflow:hidden;
+         background: #fff;
+         position:relative;
+         .foot_fl {
+             width:160px;
+             margin-left:10px;
+         }
+         .foot_fr {
+             position:absolute;
+             width:60px;
+             right:0;
+         }
+     }
+     //结束
+     .theend {
+         @inclcude rect(100%,auto);
+         background: #fff;
+         .line{
+          background: #f3f4f5;
+          height:10px;   
+         }
+         img {
+             height:26px;
+             margin-bottom:14px;
+         }
+         .connect {
+             font-size:14px;
+             padding:15px 0 5px;
+             text-align:center;
+             span {
+                 padding-right:10px;
+                 font-family: "微软雅黑";
+             }
+             span.bt {
+                 color:red;
+             }
+         }
+         .commpany {
+             text-align:center;
+             font-size:12px;
+             padding-bottom:25px;
+              margin:0 10px 0 10px;
+         }
+     }
+}
+
+

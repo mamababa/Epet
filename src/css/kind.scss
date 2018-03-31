@@ -1,0 +1,114 @@
+@import "./../lib/reset.scss";
+.header {
+	padding:0 15px;
+	height:40px;
+	background:#fff;
+	border-bottom:1px solid #cbcbcb;
+	span.select {
+		display:inline-block;
+		height:40px;
+		padding:0 4px;
+		cusor:pointer;		
+	}
+	.headerfl {
+		width:50%;
+		float: left;
+		text-align:right;
+		padding-right:5%;
+		a span {
+			color:#ed4044;
+		    border-bottom: 2px solid #ed4044;
+		    line-height:40px;
+		    font-weight:700;
+		}
+	}
+	.headerfr {
+		position:relative;
+		float: left;
+		width:50%;
+		text-align:left;
+		padding-left:5%;
+		span {
+			color:#333;
+			 line-height:40px;
+			 font-weight:700;
+		}
+		img {
+			position:absolute;
+			right:0;
+			top:13px;
+			@include rect(0.14rem,0.14rem)
+		}
+	}
+}
+.leftbox {
+	position:fixed;
+	top:40px;
+	left:0;
+	bottom:0;
+	overflow-y:scroll;
+	border-right:5px solid #f3f4f5;
+	padding-bottom:45px;
+	background: #fff;
+	 li {
+	 	padding:15px 0;
+	 	border-bottom:1px solid #f3f4f5;
+	 	width:70px;
+	 	height:50px;
+	 	font-size:13px;
+	 	text-overflow:ellipsis;
+	 	white-space: nowrap;
+	 	overflow:hidden;
+	 	text-align:center;
+	 }
+	 li:nth-child(1) {
+	 	background: #f3f4f5;
+	 	color:#ed4044;
+	 }
+	 li.on {
+	 	background: #f3f4f5;
+	 	color:#ed4044;
+	 }
+}
+.rightbox {
+	 margin-left:75px;
+	 border-top:5px solid #f3f4f5;
+	 .hotkind {
+	 	border-top:1px solid #f3f4f5;
+	 	padding:5px 5px 20px;
+	 	.hottitle {
+	 		font-size:12px;
+	 		display:block;
+	 		color:#999;
+	 		padding-left:5px;
+	 		margin-top:10px;
+	 		}
+	 		ul {
+	 			overflow:hidden;
+	 		}
+	 		li {	
+	 			padding:0 5px;
+	 			margin-top:10px;
+	 			width:33.33%;
+	 			float: left;
+	 			a {
+	 				display:block;
+	 				color:#333;
+	 				img {
+	 					width:100%;	 					
+	 				}
+	 				p {
+		 				overflow:hidden;
+		 				text-overflow:ellipsis;
+		 				white-space:nowrap;
+		 				height:20px;
+		 				text-align:center;
+		 				margin-top:10px;
+		 				font-size:13px;
+	 			}
+	 			}
+	 			
+	 		}
+	 	
+	 }
+}
