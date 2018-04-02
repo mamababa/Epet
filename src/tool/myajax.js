@@ -13,7 +13,7 @@ export default{
 		})
 	},
 	fetchJsonp(config) {
-		fetch(config.url,config.options) 
+		fetchJsonp(config.url,config.options) 
 		.then((response)=> {
 			return response.json()
 		})

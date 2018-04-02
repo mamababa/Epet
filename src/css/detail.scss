@@ -1,0 +1,58 @@
+@import "./../lib/reset.scss";
+.detailheader {
+	box-sizing: border-box;
+	height:50px;
+	line-height:50px;
+	position:relative;
+	padding:0 10px;
+	border-bottom: 1px solid #f3f3f3;
+	background: #fff;
+	color:#333;
+	a {
+		    background:  url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat;
+		    background-size: 234px 159px;
+		    height: 18px;
+		    width: 11px;
+		    background-position: -201px -10px;
+		    position: absolute;
+		    margin-top: 15px;
+		    left: 10px;
+	}
+	div {
+		width:90%;
+		line-height:50px;
+		font-size:18px;
+		span {
+			
+			margin:0 5px;
+			padding-bottom:11px;
+		}
+		span.active {
+			border-bottom:2px solid #f03e3e;
+		}
+	}
+	.topbar {
+		position:absolute;
+		    display: block;
+		    width: 50px;
+		    height: 20px;
+		    /*top:0;
+		    right:20px;*/
+		    background-size: 50px auto;
+            margin-top: 11px;
+            background: url(https://static.epetbar.com/static_wap/epetapp/pages/goods_detail/images/other.png) no-repeat 30px 2px;
+            
+	}
+	.headerquick {
+		background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat;
+		background-size: 234px 163px;
+	    height: 18px;
+	    width: 17px;
+	    background-position: -217px -10px;
+	    position: absolute;
+	    top: 0;
+	    right: 10px;
+	    outline: 0;
+	    cursor:pointer;
+	}
+}

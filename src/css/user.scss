@@ -1,0 +1,6 @@
+@import "./../lib/reset.scss";
+.userHeader {
+	@include rect(100%,auto);
+	background: url("https://img1.epetbar.com/2017-09/21/11/2ac7b0a4f0ab1e4a63819e0668d1cb39.png") no-repeat;
+	background-size:100% 100%;
+}

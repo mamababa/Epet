@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
+import '@/css/detail.scss'
 class Model extends Component {
 	state = {
 		goodData:[]
 	}
 	getData() {
-		console.log(this)
-		console.log(this.props.match.params.goodsId)
+		
 	}
 	render() {
 		return (
 			<div className="box">
-			 <header>详情</header>
+			  <div className="detailheader">
+			     <a></a>
+			     <div></div>
+			     <span className="topbar"></span>
+			     <span className="headerquick"></span>
+			  </div>
 			 <div className="content">
 			 详情
 			 </div>
@@ -19,7 +24,7 @@ class Model extends Component {
 		)
 	}
 	componentDidMount() {
-		const googdsId =this.props.match.params.bannerID;
+		
 		
 	}
 }

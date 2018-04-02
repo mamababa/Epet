@@ -4,23 +4,24 @@
 	height:40px;
 	background:#fff;
 	border-bottom:1px solid #cbcbcb;
-	span.select {
+	span {
 		display:inline-block;
 		height:40px;
 		padding:0 4px;
-		cusor:pointer;		
+		cursor:pointer;	
+		line-height:40px;
+		font-weight:700;	
+		color:#333;
+	}
+	span.select{
+		color:#ed4044;
+	    border-bottom: 2px solid #ed4044;
 	}
 	.headerfl {
 		width:50%;
 		float: left;
 		text-align:right;
 		padding-right:5%;
-		a span {
-			color:#ed4044;
-		    border-bottom: 2px solid #ed4044;
-		    line-height:40px;
-		    font-weight:700;
-		}
 	}
 	.headerfr {
 		position:relative;
@@ -28,11 +29,7 @@
 		width:50%;
 		text-align:left;
 		padding-left:5%;
-		span {
-			color:#333;
-			 line-height:40px;
-			 font-weight:700;
-		}
+		
 		img {
 			position:absolute;
 			right:0;
@@ -61,11 +58,11 @@
 	 	overflow:hidden;
 	 	text-align:center;
 	 }
-	 li:nth-child(1) {
+	 li.on {
 	 	background: #f3f4f5;
 	 	color:#ed4044;
 	 }
-	 li.on {
+	 li:nth-child(1) {
 	 	background: #f3f4f5;
 	 	color:#ed4044;
 	 }
@@ -111,4 +108,82 @@
 	 		}
 	 	
 	 }
+}
+.totalBrand {
+	@include rect(100%,auto);
+	background:#f3f4f5;
+	display:none;
+	.lookup a {
+		width:40px;
+		height:40px;
+		right:6px;
+		bottom:65px;
+		position:fixed;
+		z-index:10;
+		background: rgba(0,0,0,0.4);
+		line-height:40px;
+		color:#fff;
+		font-size:12px;
+		border-radius:50%;
+		text-align: center;
+	}
+	.brandlist {
+		background:#fff;
+		padding-bottom:15px;
+		margin-bottom:10px;
+		.title {
+			padding-top:20px;
+			font-size:12px;
+			color:#999;
+			text-align:center;
+		}
+		.list {
+			padding:0 5px;
+			overflow:hidden;
+			li {
+				width:33.33%;
+				padding:0 5px;
+				margin-top:20px;
+				float: left;
+				position:relative;
+				a {
+					display:block;
+					color:#333;
+					div {
+			          border:1px solid #e2e2e2;
+			          text-align:center;
+			          padding:50px 10px 10px;
+			          background:url(https://static.epetbar.com/static_web/wap/dist/images/background/default-epet2.jpg) no-repeat center center #fff;
+					  background-size:120px auto;
+					  img {
+					  	max-width:88%;
+					  	
+					  	height:40px;
+					  	position:absolute;
+					  	top:0;
+					  	left:0;
+					  	right:0;
+					  	margin:10px auto 0;
+					  }
+					}
+					p {
+						height:20px;
+						overflow:hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						text-align:center;
+					}
+					.name {
+						font-size:13px;
+						margin-top:5px;
+						color:#333;
+					}
+					.address {
+						font-size:12px;
+						color:#999;
+					}
+				}
+			}
+		}
+	}
 }

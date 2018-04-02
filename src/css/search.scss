@@ -1,0 +1,94 @@
+@import "./../lib/reset.scss";
+.searchheader {
+	padding:7px 14px;
+	background: #fff;
+	display:flex;
+	font-size:14px;
+	box-sizing: border-box;
+	font-family: "微软雅黑";
+	span {
+		float: left;
+		width:16px;
+		height:16px;
+		margin-top:8px;
+		border-top:1px solid #999;
+		border-left:1px solid #999;
+		-webkit-transform:rotate(-45deg);
+	}
+	div {
+		flex:1;
+		height:35px;
+		display:flex;
+		line-height:35px;
+		background: #f6f6f6;
+		padding:0 10px;
+		border-radius:5px;
+		form {
+			width:90%;
+			input {
+				border:0;
+				background: #f6f6f6;
+				height:35px;
+				line-height:35px;
+				font-size:14px;
+				
+			}
+		}
+		label img {
+				vertical:middle;
+				height:16px;
+				margin-top:3px;
+			}
+		
+	}
+	a {
+		line-height:32px;
+		margin-left:5px;
+		cursor:pointer;
+		font-size:16px;
+		color:#333;
+	}
+}
+.hot {
+	font-family: "微软雅黑";
+	p {
+		background:#fbfbfb;
+		height:30px;
+		line-height:30px;
+		padding-left:12px;
+		font-size:14px;
+		color:#666;
+		img {
+			height:20px;
+			margin:-2px 8px 0 0;
+			vertical-align:middle;
+		}
+		span {
+			line-heigth:30px;
+			font-size:14px;
+		}
+	}
+	.hotcon {
+		padding:0 12px 23px;
+		overflow: hidden;
+		a {
+			padding:3px 10px;
+			margin:10px 10px 0 0;
+			color:#999;
+			font-size:12px;
+			border-radius:15px;
+			float: left;
+			background: #fff;
+		}
+	}
+}
+.clearhis {
+	width:60%;
+	margin:40px auto 60px;
+	line-height:40px;
+	font-size:15px;
+	border:1px solid #777;
+	border-radius:5px;
+	text-align:center;
+	font-family: "微软雅黑";
+}
